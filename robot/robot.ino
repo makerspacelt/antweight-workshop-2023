@@ -10,7 +10,7 @@
    * ESP32 Dev Module
 */
 
-#define ROBOT_NAME "Ant-7"
+#define ROBOT_NAME "Ant-bot"
 
 #define CUSTOM_SETTINGS
 #define INCLUDE_GAMEPAD_MODULE
@@ -18,10 +18,10 @@
 #include "Cdrv8833.h"
 
 // DRV8333 config
-#define PIN_IN1 19
-#define PIN_IN2 18
-#define PIN_IN3 17
-#define PIN_IN4 16
+#define PIN_IN1 26
+#define PIN_IN2 25
+#define PIN_IN3 13
+#define PIN_IN4 27
 #define CHANNEL 0 // PWM channel (0..15)
 #define SWAP    false // swap motor rotation direction 
 
@@ -81,6 +81,25 @@ void loop() {
   // calculate target speed
   m1_spd = mag * (sina - cosa) * max_spd;
   m2_spd = mag * (sina + cosa) * max_spd;
+
+  // "Digital Mode" up/down/left/right buttons
+  if (GamePad.isUpPressed()) {
+    m1_spd = 100;
+    m2_spd = 100;
+  }
+  else if (GamePad.isDownPressed()) {
+    m1_spd = -100;
+    m2_spd = -100;
+  }
+  else if (GamePad.isLeftPressed()) {
+    m1_spd = 100;
+    m2_spd = -100;
+  }
+  else if (GamePad.isRightPressed()) {
+    m1_spd = -100;
+    m2_spd = 100;
+  }
+
   
   m1_spd = constrain(m1_spd, min_spd, max_spd);
   m2_spd = constrain(m2_spd, min_spd, max_spd);
@@ -114,12 +133,6 @@ void loop() {
     Serial.print(m2_spd);
     Serial.println();
   }
-
-  // "Digital Mode" up/down/left/right buttons
-  //if (GamePad.isUpPressed())
-  //if (GamePad.isDownPressed())
-  //if (GamePad.isLeftPressed())
-  //if (GamePad.isRightPressed())
 
   // All modes - buttons
   //if (GamePad.isCrossPressed())
