@@ -10,18 +10,30 @@
    * ESP32 Dev Module
 */
 
-#define ROBOT_NAME "Ant-bot"
+#define ROBOT_NAME "Zolinis stumbras"
 
 #define CUSTOM_SETTINGS
 #define INCLUDE_GAMEPAD_MODULE
 #include <DabbleESP32.h>
 #include "Cdrv8833.h"
 
-// DRV8333 config
+// Uncomment this if the red motor wire is on the left
+// when looking from the back of the motor.
+#define M1_M2_PINS_INVERT 1
+
+#ifndef M1_M2_PINS_INVERT
+// M1 & M2 connected correctly (plus on PCB is red wire)
 #define PIN_IN1 26
 #define PIN_IN2 25
 #define PIN_IN3 13
 #define PIN_IN4 27
+#else
+// M1 & M2 connected incorrectly (plus on PCB is black wire)
+#define PIN_IN1 25
+#define PIN_IN2 26
+#define PIN_IN3 27
+#define PIN_IN4 13
+#endif
 #define CHANNEL 0 // PWM channel (0..15)
 #define SWAP    false // swap motor rotation direction 
 
