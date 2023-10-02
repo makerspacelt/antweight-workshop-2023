@@ -1,4 +1,4 @@
-# antweight-workshop-2023
+![image](https://github.com/TomasSiauliaiNights/antweight-workshop-2023/assets/49546738/e8c43ab8-ecd6-4a26-bce5-a17608e7b9dc)# antweight-workshop-2023
 #antweightKMS2023
 
 DIY Cheap Antweight Robot Controlled with bluetooth mobile device using dabble app. (Lithuanian Antweight format - 200g)
@@ -42,5 +42,6 @@ If you decide to use vape battery, then the weight of the robot will be ~190g if
 
 You can also use 2s batteries, but the total price would increase by ~5eur. The cheapest available 2s batteries are from Chinahobbyline. 
 
+![image](https://github.com/TomasSiauliaiNights/antweight-workshop-2023/assets/49546738/311e56ec-a9d1-4247-af95-10706b7bf2cd)
 
 
