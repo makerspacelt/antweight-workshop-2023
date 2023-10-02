@@ -6,15 +6,25 @@ NOTE - IOS doesn't support "analog" joystick, only "digital" buttons.
 Total cost of everything (if you source 1cell lithium battery yourself) - around 15eur
 
 https://vi.aliexpress.com/item/1005004255557549.html 1pair of wheels (sold by pair)
+
 https://vi.aliexpress.com/item/4000083406292.html 1pcs motor driver
+
 https://vi.aliexpress.com/item/1005004337178335.html 1vnt ESP32 (the cheaper ones work)
+
 https://vi.aliexpress.com/item/1005004500537507.html 4pcs 26Awg red black (sold by 100pcs)
+
 https://vi.aliexpress.com/item/33022320164.html 2vnt N20 motors 6v 300rpm
+
 https://vi.aliexpress.com/item/1005004985397880.html 3pcs "top entry" jst xh connector (sold by 100pcs)
+
 https://vi.aliexpress.com/item/1005005037876729.html 1pcs TP4056 charger
+
 https://vi.aliexpress.com/item/32810326460.html 1pcs Boost module
+
 https://vi.aliexpress.com/item/4000278469653.html 2pcs 15P and 2pcs 6P (sold by more pcs)
+
 https://vi.aliexpress.com/item/33012530737.html 1vnt MTS103 switch (not the best, easy to turn off)
+
 
 Plastic- ~80g one robot, recommendation - filalab.shop
 
